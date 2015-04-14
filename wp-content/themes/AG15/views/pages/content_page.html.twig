@@ -1,0 +1,20 @@
+<div class="subheader">
+	<div class="container">
+		{{ contact_form }}
+		<p class="headline">
+			{% if post.headline  %}{{ post.headline }}
+			{% else %}{{ post.title }}
+			{% endif %}
+		</p>
+	</div>
+</div>
+<div class="main-content {{ spark_class }}">
+	<div class="container columns">
+		<div class="one-sixth column">
+			{% include 'views/components/nav.html.twig' %}
+		</div>
+		<div class="five-sixths column">
+			{{content}}
+		</div>
+	</div>
+</div>

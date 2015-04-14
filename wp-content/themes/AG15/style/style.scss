@@ -1,0 +1,47 @@
+/* 
+ *	Theme Name: AG15
+ *	Author:	BOOM Creative
+ *	Description: Super Theme for Custom Site Development
+ *	Version: 0.1
+ *	Template: Spark15
+ */
+
+@import "compass";
+@import "compass/reset"; 
+@import "fa/font-awesome";
+@import "spark/mixins";
+@import "brand/brand";
+
+
+@import "component/flip_tile_wall";
+@import "component/tiles";
+
+//Global Styles
+@import "section/global";
+
+//Header 
+@import "section/header";
+@import "section/sidr";
+
+//Home Page
+///Feature
+@import "section/home_feature";
+@import "section/home";
+
+//Portfolio
+@import "component/project";
+
+//Team
+@import "section/team";
+
+//Accolades
+@import "section/accolades";
+
+//Contact
+@import "section/contact";
+
+//Blog
+@import "section/blog";
+
+//Footer
+@import "section/footer";

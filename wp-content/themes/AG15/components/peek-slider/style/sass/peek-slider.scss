@@ -1,0 +1,146 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+$sliderHeight : 69%;
+$sliderMax: 418px;
+$sliderMaxWidth: 1080px;
+
+$tabletHeight: 40vw;
+$mobileHeight: 65vw;
+
+
+.peek-slider{
+	width: 100vw;
+	// padding: 1em 0;
+	background: black;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 35.8%;
+	.window {
+		display: block;
+		width: 90vw;
+		max-width: $sliderMaxWidth;
+		margin: auto;
+		position: relative;
+	}
+
+	&.home-feature{
+		@media screen and ( min-width: 1270px ){
+			padding-bottom: 430px;
+		}
+		@media screen and ( max-width: 800px ){
+			height: 0;
+			padding-bottom: 44.8%;
+		}
+		@media screen and ( max-width: 650px ){
+			padding-bottom: 59.7%;
+		}
+	}
+
+	.slide{
+		width: 100%;
+		position: absolute;
+		transition: 500ms all linear;
+		opacity:0;
+		overflow: hidden;
+		display: block;
+		padding-bottom: 40%;
+
+		&.active{
+			right: 0%;
+			z-index: 10;
+			opacity: 1;
+			transition-delay: 0s;
+		}
+		&.next{
+			right: -100%;
+			opacity: 1;
+		}
+		&.next-next{
+			right: -200%;
+			z-index: -1;
+			opacity:0;
+		}
+		&.prev{
+			right: 100%;
+			opacity: 1;
+		}
+		&.prev-prev{
+			right: 200%;
+			z-index: -1;
+			opacity: 0;
+		}
+
+		&.project-feature section{
+			@media screen and ( min-width: 800px ){
+				height: 100%;
+				position: absolute;
+				top: 0; 
+				bottom: 0;
+
+				.box{
+					transition: 0;
+				}
+
+			}
+		}
+
+		@media screen and ( min-width: 1270px ){
+			padding-bottom: 430px;
+		}
+		@media screen and ( max-width: 800px ){
+			height: 0;
+			padding-bottom: 49.8%;
+		}
+		@media screen and ( max-width: 650px ){
+			padding-bottom: 66.6%;
+		}
+
+	}
+
+	.pager {
+		color: white;
+		li { display: inline-block; }
+	}
+}
+
+// .peek-slider, .peek-slider .window, .peek-slider .slide {
+// 		height: $sliderHeight;
+// 		// padding-bottom: 40%
+// 		// max-height: $sliderMax;
+// 		@media screen and ( max-width: 800px ){
+// 			// height: $tabletHeight;
+// 			.box {
+// 				padding-bottom: $tabletHeight/2
+// 			}
+// 		}
+// 		@media screen and ( max-width: 700px ){
+// 			height: $mobileHeight;
+// 			.box {
+// 				padding-bottom: $mobileHeight/2;
+// 			}
+// 		}
+// }
+
+// .peek-slider .window{
+// 	padding-bottom: 40%;
+// }
+
+//Slide Type Styles
+.slide {
+	&.image{
+		text-align: center;
+		img {
+		    width: 100%;
+		    height: auto;
+		    margin: auto;
+		    top: 0;
+		    bottom: 0;
+		    display: block;
+		    position: absolute;
+		}
+	} 
+}
+
+

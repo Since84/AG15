@@ -1,0 +1,48 @@
+.flip-tile-wall{
+	position: relative;
+	height: 50vw;
+	width: 100%;
+	display: block;
+}
+
+.flip-card{
+	@include flip-card;
+	width: 24.9%;
+	padding-bottom: 24.9%;
+	max-height: 220px;
+	max-width:220px;
+	display: inline-block;
+	text-align: center;
+	position:relative;
+
+	h2 { 
+		color: white; 
+		line-height: 1.3em;
+		font-weight: bold;
+		font-size: 14px;
+		margin-bottom: 0.5em; 
+	}
+	
+	@media screen and ( max-width: 720px ) {
+		h2{ display: none; }
+		p{ 
+			font-weight: bold; 
+			font-size: 14px; 
+			position: absolute;
+			margin: auto;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			display: inline-block;
+			height: 1rem;
+			text-align: center;
+		}
+	}
+
+	@media screen and ( min-width: 720px ) {
+		width: 20%;
+		height: 24vw;
+	}
+
+}

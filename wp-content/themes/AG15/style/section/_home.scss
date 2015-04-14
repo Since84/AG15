@@ -1,0 +1,70 @@
+
+.home {
+	h3{
+		padding-bottom: 1em;
+		margin-bottom: 2em;
+		border-bottom: 3px solid $lightGray;
+	}
+
+	.two-thirds{
+		padding-left: 4em;
+	}
+
+	// Testimonial
+	.testimonial {
+		padding: 10px 10px 10px 0;
+		margin-bottom: 1em;
+		position: relative;
+		.thumbnail{
+			display: inline-block;
+			margin-right: 20px;
+			margin-bottom: 10px;
+			position: absolute;
+			top: 10px;
+			left: 0;
+		}
+		.text{
+			display: inline-block;
+			width: 100%;
+			vertical-align: top;
+			padding-left: 80px;
+			p{
+				font-style: italic;
+				font-size: 14px;
+				line-height: 1.5em;
+			}
+		}
+	}
+
+	// Stay Connected {
+	.wpcf7 input{
+		margin-right: 1em;
+	}
+
+	// News 
+	.news-post{
+		width: 46%;
+		display: inline-block;
+		vertical-align: top;
+		margin-bottom: 10%;
+
+		&:nth-child(odd){
+			margin-right: 6%;
+		}
+		h4{ display: none; }
+		h2{ margin-bottom: 10px; }
+		a {
+			color: $textGray;	
+			text-decoration: none;
+			font-weight: normal;
+		}
+		.thumb{
+			display: block;
+			width: 100%;
+			padding-bottom: 40%;
+			background-size: cover;
+			margin-bottom: 6%;
+		}
+	}
+
+}

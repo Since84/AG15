@@ -1,0 +1,16 @@
+<div class="peek-slider {{ spark_class }}">
+	<div class="window">
+{# 		<img class="slide" src="http://lorempixel.com/900/400"/>
+		<img class="slide" src="http://lorempixel.com/900/400"/>
+		<img class="slide" src="http://lorempixel.com/900/400"/>
+		<img class="slide" src="http://lorempixel.com/900/400"/>
+		<img class="slide" src="http://lorempixel.com/900/400"/> #}
+		{% for slide in feed %} 
+			{% include slide_template %}
+		{% endfor %}
+	</div>
+	<ul class="pager">
+		<li class="prev-button"></li>
+		<li class="next-button"></li>
+	</ul>
+</div>

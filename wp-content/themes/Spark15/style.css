@@ -1,0 +1,13 @@
+/* 
+ *	Theme Name: Spark15
+ *	Author:	BOOM Creative
+ *	Description: Super Theme for Custom Site Development
+ *	Version: 0.1
+ */
+/* line 10, style/style.scss */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1080px;
+  margin: auto;
+}

@@ -1,0 +1,96 @@
+
+.main-content.contact{
+	.one-third{
+		img{
+			width: 100%;
+			height: auto;
+			margin: 40px 0 0;
+		}
+	}
+	.two-thirds{
+		.location{
+			display: block;
+			width: 100%;
+			display: flex;
+			margin-bottom: 2em;
+		}
+		.address{
+			display: inline-block;
+			flex: 1;
+		}
+	}
+	.contact-form{
+		margin: 0 10px;
+		background: $lightGray;
+		padding: 20px;
+		min-height: 180px;
+		position: relative;
+		@media screen and ( max-width: 720px ){
+			margin: 0;
+		}
+
+		.ag-form{
+			max-height: 0px;
+			overflow: hidden;
+			transition: 500ms max-height linear;
+			&.open{
+				max-height: 2000px;	
+				& ~ p .form-trigger{
+					transform: rotate(180deg);
+				}			
+			}
+		}
+
+		.form-trigger{
+			position: absolute;
+			display: block;
+			width: 20px;
+			height: 20px;
+			right: 20px;
+			bottom: 20px;
+			background: url("style/images/icons/down-arrow-disc.png") no-repeat scroll 0% 0% transparent;
+			text-indent: -30000px;
+			transition: transform 250ms linear;
+		}
+
+		h2{
+			margin: 10px 0;
+		}
+		input, select{
+			&:focus{
+				outline: none;
+			}
+		}
+		input:not([type="submit"]), select, textarea{
+			width: 100%;
+			margin-bottom: 1em;
+			border: none;
+			border-radius: 0;
+			background: white;
+			padding: 10px;
+		}
+		select:not([multiple="multiple"]) {
+			height: 35px;
+			line-height: 1.5em;
+			padding: 0 15px;
+		}
+		select[multiple="multiple"]{
+			padding: 0;
+			option{
+				padding: 10px;
+				border-bottom: 1px solid $lightGray;
+			}
+		} 
+		.budget-select{
+			select:not(.all-options){
+				display:none;
+			}
+			&[selected-option="mobile-app"]{ .mobile-app{ display:block } select:not(.mobile-app){ display: none;} }
+			&[selected-option="websites"]{ .websites{ display:block } select:not(.websites){ display: none;} }
+		}
+
+
+
+		.tell-us-more{}
+	}
+}

@@ -1,0 +1,23 @@
+<div class="member-detail columns {{ post.id }}" data-id="{{ post.id }}">
+	<div class='close'></div>
+		<div class='column one-third'>
+		<h1 class='member-name'>{{ post.post_title }}</h1>
+		<h2 class='member-position'>{{ post.professional_position }}</h2>
+		<ul class='member-social'>
+			{% if post.member_facebook %}<li class='member-facebook'><a href='//www.facebook.com/{{ post.member_facebook }}'></a></li>{% endif %}
+			{% if post.member_linkedin %}<li class='member-linkedin'><a href='//www.linkedin.com/in/{{ post.member_linkedin }}'></a></li>{% endif %}
+			{% if post.member_twitter %}<li class='member-twitter'><a href='//www.twitter.com/{{ post.member_twitter }}'></a></li>{% endif %}
+			{% if post.member_behance %}<li class='member-behance'><a href='//www.behance.com/{{ post.member_behance }}'></a></li>{% endif %}
+			{% if post.member_dribbble %}<li class='member-dribbble'><a href='//www.dribbble.com/{{ post.member_dribbble}}'></a></li>{% endif %}
+		</ul>
+		<ul class="member-expertise">
+			<h2> Expertise </h2>
+			{% for expertise in expertise %}
+				<li>{{ expertise.name }}</li>
+			{% endfor %}
+		</ul>
+	</div>
+	<div class='column two-thirds'>
+		<div class='member-bio'>{{ post.content }}</div>
+	</div>
+</div>

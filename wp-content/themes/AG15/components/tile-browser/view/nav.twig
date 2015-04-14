@@ -1,0 +1,14 @@
+<div class="tile-control-bar">
+	<nav class="spark-region {{ spark_class }}">
+		<ul>
+			<li class="all-work active filter" data-filter="*"><span>All</span>
+	        {% for item in nav %}
+	            <li class="nav-main-item filter {{item.classes | join(' ')}}" data-filter="{{item.slug}}"><span>{{item.name}}</span>
+	        {% endfor %}
+		</ul>
+	</nav>
+	<ul class="browser-controls">
+		<li class="fullscreen"></li>
+		<li class="close"></li>
+	</ul>
+</div>

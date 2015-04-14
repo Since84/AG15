@@ -1,0 +1,38 @@
+<div class="subheader">
+	<div class="container">
+		{{ contact_form }}
+		<p class="headline">
+			{% if post.headline  %}{{ post.headline }}
+			{% else %}{{ post.title }}
+			{% endif %}
+		</p>
+	</div>
+</div>
+<div class="main-content contact">
+	<div class="container columns">
+		<div class="one-third column">
+			<img src="{{ map.url }}"/>
+		</div>		
+		<div class="two-thirds column">
+			{# Addresses #}
+			<div class="location">
+			{% for address in addresses %}
+				{% include 'views/content/address.twig' %}
+			{% endfor %}
+			</div>
+			<div class="links">
+				{% for link in links %}
+					{% include 'views/content/contact_link.twig' %}
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	<div class="container columns">
+		<div class="one-half column">
+			{{ work_with_us }}
+		</div>
+		<div class="one-half column">
+			{{ collaborate_with_us }}
+		</div>
+	</div>
+</div>

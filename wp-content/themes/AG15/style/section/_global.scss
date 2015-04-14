@@ -1,0 +1,157 @@
+$containerwidth: 1000px;
+
+html,body{
+	width: 100%;
+	// overflow-y: scroll;
+}
+
+body {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 12px;
+	color: $textGray;
+	overflow-x: hidden;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+//Forms
+input {
+	border-radius: 5px;
+	border: 1px solid $textGray;
+	background: $lightGray;
+	color: $textGray;
+
+	&[type="text"], &[type="email"] {
+		padding: 5px;
+		width: 210px;
+	}
+
+	&[type="submit"] {
+		@include blue-button;
+	}
+
+}
+
+.subheader {
+	background: $darkGray;
+	// padding: 10px 0;
+	min-height: 50px;
+
+	input {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	
+	form { 
+		margin-bottom: 0;
+		text-align: right;
+		padding: 10px;
+		background: #222121;
+		width: auto;
+		float: right;
+		.cf-sb { margin-bottom: 0; }
+	}
+
+	.searchform{
+		label { display: none; }
+		float: right;
+		padding: 10px; 
+		background: $backgroundGray;
+		
+		input[type="text"] {
+			background: #d8d8d8;
+			border: none;
+			border-radius: 3px;
+			padding: 3px;
+			width: 300px;
+			margin-right: 10px;
+		}
+
+		input[type="submit"] { 
+			@include blue-button;
+		}
+
+	}
+
+	.page-title {
+		font-size: 20px;
+		padding: 20px 0;
+		font-weight: 400;
+	}
+
+	.headline {
+		clear: both;
+		padding: 20px 40px 40px;
+		font-size: 20px;
+		line-height: 1.45;
+		margin: 0;
+	}
+}
+
+.main-content{
+	background: url(style/images/diagonal-stripes.png);
+
+	& > .container{
+		padding: 0 40px;
+		background: white;
+	}
+
+	nav{
+		h2{
+			font-size: 14px;
+			margin-bottom: .5em;
+		}
+		a{
+			color: black;
+			text-decoration: none;
+			font-weight: normal;
+			&:hover{
+				color: red;
+			}
+		}
+		.current-menu-item a {
+			font-weight: bold;
+		}
+	}
+
+	//Preview Content
+	.preview-section{
+		border-bottom: 3px solid $lightGray;
+		a{
+			display: inline-block;
+			margin-bottom: 2em;
+			text-transform: capitalize;
+			text-decoration: none;
+		}
+	}
+
+}
+
+//TileBrowser
+.tile-browser{
+	.tile-control-bar{
+		ul > li { 
+			transition: .5s all ease-in-out; 
+		}
+		.active.filter{
+			background: $darkRed;
+			color: white;
+		}
+		li{
+			&:hover{
+				background: $red;
+				color: white;
+			}
+		}
+	}
+	.detail-pager{
+		li:hover{
+			&:before{
+				background: $red;
+				color: white;
+			}
+		}
+	}
+}

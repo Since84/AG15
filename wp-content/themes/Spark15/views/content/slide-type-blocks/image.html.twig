@@ -1,0 +1,4 @@
+<li class='slide image'>
+	{% if slide.custom.slide_link %} <a href="{{ slide.custom.slide_link }}"> {% endif %}
+		<img src="{{ slide.thumbnail.get_url }}"/>
+	{% if slide.custom.slide_link %} </a> {% endif %}

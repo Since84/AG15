@@ -1,0 +1,15 @@
+/* 
+ *	Theme Name: Spark15
+ *	Author:	BOOM Creative
+ *	Description: Super Theme for Custom Site Development
+ *	Version: 0.1
+ */
+
+// @import "compass/reset";
+$containerwidth: 1080px;
+.container {
+	position: relative;
+	width: 100%;
+	max-width: $containerwidth;
+	margin: auto;
+}

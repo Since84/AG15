@@ -1,0 +1,48 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700,300");
+
+$fontSmall: 11px;
+$fontMedium: 12px;
+$fontLarge: 13px;
+$fontXLarge: 14px;
+
+/** Typography **/
+body { 
+	font-size: $fontMedium; 
+	font-family: 'Open Sans', Arial, sans-serif;
+	color: $textGray;
+	line-height: 1.6em;
+}
+
+a { 
+	color: $red; 
+	font-weight: 700;
+	:hover{
+		color: $red;
+		text-decoration: underline;
+	}
+}
+
+p {
+	margin-bottom: 1.45em; 
+}
+
+strong {
+	font-weight: bold;
+}
+
+h1,h2 {
+	font-size: $fontXLarge;
+	font-weight: 700;
+	color: black;
+}
+
+h2 {
+	font-size: $fontMedium;
+	border: none;
+}
+
+h3 {
+	font-size: $fontSmall;
+	font-weight: 700;
+	color: black;
+}

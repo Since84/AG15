@@ -1,0 +1,30 @@
+<li class="project detail {{ post.id }}" data-id="{{ post.id }}">
+	<div class='close'></div>
+	<div class='feature-wide'>
+		<div class='project-feature'>
+			<div 	class='cycle-slideshow' 
+				data-cycle-fx=scrollHorz
+				data-cycle-swipe=true
+				data-cycle-timeout='5000'
+				data-cycle-pager='.{{ post.id }} .feature-pager'
+				data-cycle-auto-height="0"
+				>{% for feature in features %}
+					{% if feature.type == 'image' %}
+						<img src="{{ feature.image.url }}"/>
+					{% endif %}
+				{% endfor %}</div>	
+		</div>	
+	</div>
+	<div class='feature-side'>
+		<div class='feature-pager'></div>
+		<h1 class='project-name'>{{ post.post_title }}</h1>
+		<h2 class='project-type'></h2>
+		<div class='project-profile'>{{ post.content }}</div>
+		<ul class='project-services'>
+			<h2>Services</h2>
+			{% for service in services %}
+				<li class='project-service'>{{ service.name }}</li>
+			{% endfor %}
+		</ul>
+	</div>
+</li>

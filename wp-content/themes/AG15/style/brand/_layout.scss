@@ -1,0 +1,39 @@
+/* 	Columns */
+.columns {
+	white-space: nowrap;
+
+	.column { 
+		display: inline-block; 
+		white-space: normal;
+		vertical-align: top; 
+		margin:0; 
+		padding: 60px 0 0; 
+	}
+
+	@media screen and ( max-width: 720px ){
+		white-space: normal;
+		.column{
+			width: 100%;
+			padding: 0;
+			margin-bottom: 40px;		
+		}
+	}
+
+}
+
+/* 	Columns */
+.one-third { width: 33.3%; padding: 60px 3% 0 0}
+.two-thirds { width: 66.6%; padding: 60px 0 0 4%}
+
+/* 	Columns */
+.one-half { width: 50%; padding: 60px 3% 0 0}
+
+.one-fourth { width: 25%; padding: 60px 3% 0 0}
+.three-fourths { width: 75%; padding: 60px 0 0 4%}
+
+.one-sixth { width: 16.6%; padding: 60px 3% 0 0}
+.five-sixths { width: 83%; padding: 60px 0 0 4%}
+
+.left-column { width: 16%; padding-right: 2%;} 
+.wide-content { width: 80.9%; }
+.col-2 { width: 47%; &:nth-child(odd){ padding-right: 5%; } }

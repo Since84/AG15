@@ -1,0 +1,14 @@
+
+.sidr {
+	background: $darkGray;
+	color: white;
+	ul {
+		border: none;
+		li {
+			border-color: $backgroundprimary;
+			border-width: 0 0 1px 0;
+			a { color: white; }			
+		}
+
+	}
+}

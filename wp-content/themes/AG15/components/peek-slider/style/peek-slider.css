@@ -1,0 +1,133 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 13, sass/peek-slider.scss */
+.peek-slider {
+  width: 100vw;
+  background: black;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 35.8%;
+}
+/* line 20, sass/peek-slider.scss */
+.peek-slider .window {
+  display: block;
+  width: 90vw;
+  max-width: 1080px;
+  margin: auto;
+  position: relative;
+}
+@media screen and (min-width: 1270px) {
+  /* line 28, sass/peek-slider.scss */
+  .peek-slider.home-feature {
+    padding-bottom: 430px;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 28, sass/peek-slider.scss */
+  .peek-slider.home-feature {
+    height: 0;
+    padding-bottom: 44.8%;
+  }
+}
+@media screen and (max-width: 650px) {
+  /* line 28, sass/peek-slider.scss */
+  .peek-slider.home-feature {
+    padding-bottom: 59.7%;
+  }
+}
+/* line 41, sass/peek-slider.scss */
+.peek-slider .slide {
+  width: 100%;
+  position: absolute;
+  transition: 500ms all linear;
+  opacity: 0;
+  overflow: hidden;
+  display: block;
+  padding-bottom: 40%;
+}
+/* line 50, sass/peek-slider.scss */
+.peek-slider .slide.active {
+  right: 0%;
+  z-index: 10;
+  opacity: 1;
+  transition-delay: 0s;
+}
+/* line 56, sass/peek-slider.scss */
+.peek-slider .slide.next {
+  right: -100%;
+  opacity: 1;
+}
+/* line 60, sass/peek-slider.scss */
+.peek-slider .slide.next-next {
+  right: -200%;
+  z-index: -1;
+  opacity: 0;
+}
+/* line 65, sass/peek-slider.scss */
+.peek-slider .slide.prev {
+  right: 100%;
+  opacity: 1;
+}
+/* line 69, sass/peek-slider.scss */
+.peek-slider .slide.prev-prev {
+  right: 200%;
+  z-index: -1;
+  opacity: 0;
+}
+@media screen and (min-width: 800px) {
+  /* line 75, sass/peek-slider.scss */
+  .peek-slider .slide.project-feature section {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+  /* line 82, sass/peek-slider.scss */
+  .peek-slider .slide.project-feature section .box {
+    transition: 0;
+  }
+}
+@media screen and (min-width: 1270px) {
+  /* line 41, sass/peek-slider.scss */
+  .peek-slider .slide {
+    padding-bottom: 430px;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 41, sass/peek-slider.scss */
+  .peek-slider .slide {
+    height: 0;
+    padding-bottom: 49.8%;
+  }
+}
+@media screen and (max-width: 650px) {
+  /* line 41, sass/peek-slider.scss */
+  .peek-slider .slide {
+    padding-bottom: 66.6%;
+  }
+}
+/* line 102, sass/peek-slider.scss */
+.peek-slider .pager {
+  color: white;
+}
+/* line 104, sass/peek-slider.scss */
+.peek-slider .pager li {
+  display: inline-block;
+}
+
+/* line 132, sass/peek-slider.scss */
+.slide.image {
+  text-align: center;
+}
+/* line 134, sass/peek-slider.scss */
+.slide.image img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  display: block;
+  position: absolute;
+}

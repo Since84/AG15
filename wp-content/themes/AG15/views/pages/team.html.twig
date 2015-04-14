@@ -1,0 +1,22 @@
+<div class="subheader">
+	<div class="container">
+		{{ contact_form }}
+		<p class="headline">
+			{{ post.headline }}
+		</p>
+	</div>
+</div>
+<div class="main-content">
+	<div class="container columns">
+		<div class="one-sixth column">
+			{% include 'views/components/nav.html.twig' %}
+		</div>
+		<div class="five-sixths column">
+			{{ team }}	
+			<div class="secondary-content">
+				{{ work }}
+				{{ collaborate }}
+			</div>
+		</div>
+	</div>
+</div>

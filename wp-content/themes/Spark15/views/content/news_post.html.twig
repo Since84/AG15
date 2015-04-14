@@ -1,0 +1,9 @@
+<div class="news-post">
+	<a href="{{ slide.permalink }}">
+		<h4>{{ slide.date }}</h4>
+		<h2 class="post-title">{{ slide.title }}</h2>
+		<span class="thumb" style="background-image:url({{ slide.thumbnail.src }});"></span>
+
+		{{ slide.get_preview(48, '', '') }}
+	</a>
+</div>

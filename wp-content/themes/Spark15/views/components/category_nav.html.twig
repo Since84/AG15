@@ -1,0 +1,12 @@
+<nav class="spark-region {{ spark_class }}">
+	<h2>Categories</h2>
+	<ul>
+        {% for item in nav %}
+                <li class="nav-main-item {{item.classes | join(' ')}}"><a class="nav-main-link" href="{{item.get_link}}">{{item.name}}</a>
+                </li>
+        {% endfor %}
+        {% if back %}
+        	<li class="go-back-button"><a href="javascript:history.go(-1)" onMouseOver="self.status=document.referrer;return true">Go Back</a></li>
+        {% endif %}
+	</ul>
+</nav>

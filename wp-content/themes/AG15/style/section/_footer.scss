@@ -1,0 +1,60 @@
+footer{
+	padding: 10px 40px;
+}
+.footer-nav {
+	border-bottom: 4px solid $lightGray;
+	margin-bottom: 10px;
+	ul{
+		width: 84%;
+		// min-width: 400px;
+		display: inline-block;
+		vertical-align: top;
+		padding: 10px 0;
+		> li {
+			display: inline-block;
+			width: auto;
+			vertical-align: top;
+			margin-bottom: 5px;
+			margin-right: 20px;
+			a {
+				text-decoration: none;
+				font-weight: 400;
+				color: $textGray;
+				&:hover{
+					color: $red;
+				}
+			}
+		}
+	}
+	.sitemap nav{
+		display: inline-block;
+		ul{
+			li{ list-style: initial; }
+		}
+	}
+	.social-icons-widget{
+		display: inline-block;
+		float: right;
+		width: 200px;
+		text-align: right;
+
+		ul, ul li {
+			float: none;
+		}
+		ul {
+			margin: 0;
+		}
+	}
+}
+
+.footer-sub{
+	display: inline-block;
+	.address{
+		li{ display: inline-block; }
+		.name { width: 120px; margin-right: 10px; }
+		.fax, .phone span { display: none; }
+	}
+}
+.copyright {
+	float: right;
+}

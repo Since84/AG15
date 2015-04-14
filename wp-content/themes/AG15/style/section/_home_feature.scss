@@ -1,0 +1,139 @@
+// .home-feature {
+// 	height: 67vw; 
+// } 	
+
+.peek-slider {
+	// display: block;
+	// position: relative;
+	// width: 100vw;
+	// height: 400vw;
+	// max-width: $containerwidth;
+	// max-height: 400px;
+	// top: 0;
+	// left: 0;
+	// background: $darkGray;
+	// margin: auto;
+	// overflow: hidden;
+
+	&:hover .paging { opacity: 1; }
+
+	.slide-container{
+		position: relative;
+		width: 100%;
+		white-space: nowrap;
+		margin: auto;
+	}
+	
+	.slide-window {
+		width: 100%;
+		max-width: $containerwidth;
+		margin: auto;
+		background: $darkGray;
+		white-space: normal;
+	}
+
+	.slide{
+
+
+		// & > img, & > a > img {
+		// 	max-width: $containerwidth;
+		// 	width: 100%;
+		// 	height: auto;
+		// 	position: absolute;
+		// 	top: 0;
+		// 	bottom: 0;
+		// 	margin: auto;
+		// }
+
+		// &.image{
+		// 	img {
+		// 		width: 100vw;
+		// 		max-width: $containerwidth;
+		// 		height: auto;
+		// 	}			
+		// }
+
+		&.video { 
+			text-align: center;
+			iframe{
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin: auto;
+			}
+		}
+
+
+	}
+
+	.pager > li {
+		width: 5.1%;
+		height: 100%;
+		padding: 0;
+		display:block;
+		position: absolute;
+		border:none;
+		z-index: 500; 
+		opacity: 0;
+		top: 0;
+		background: none;
+	    -moz-transition:opacity .5s, -moz-transform .5s;
+	    -webkit-transition:opacity .5s, -webkit-transform .5s;
+	    -o-transition:opacity .5s, -o-transform .5s;
+	    transition:opacity .5s, transform .5s;
+		&.prev-button{ 
+			left: 0; 
+			background-image: $left-arrow-slider;
+			background-position: 0% 50%;
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+		}
+		&.next-button{ 
+			right: 0; 
+			background-image: $right-arrow-slider;
+			background-position: 100% 50%;
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+		}
+	}
+	&:hover .pager li { opacity: 1; }
+
+	
+}
+	
+
+.feature-slider{
+	display: block;
+	// position: absolute;
+	width: 100vw;
+	max-width: none;
+	top: 0;
+	left: 0;
+	height: 400px;	
+	margin: auto;
+	overflow: hidden;
+
+	.slide{
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+		max-width: $containerwidth;
+		width: 100%;
+		height: 400px;
+		overflow: hidden;
+
+
+		& > img {
+			max-width: $containerwidth;
+			width: 100%;
+			height: auto;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+		}
+	}
+
+}

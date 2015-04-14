@@ -1,0 +1,12 @@
+<div class='box team' data-id="{{ tile.id }}">	
+    <div class="box-content flip-tile">
+        <div class='front' style="background-image: url({{ tile.get_thumbnail.get_src }});"></div>
+        <div class='back' 
+             style="background-image: url({{ tile.get_thumbnail.get_src('small') }});">
+              <h2>
+                 {{ tile.post_title }}
+             </h2>
+             <p>{{ tile.professional_position }}</p>
+     </div>	
+ </div>				
+</div>

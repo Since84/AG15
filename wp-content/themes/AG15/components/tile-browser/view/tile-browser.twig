@@ -1,0 +1,28 @@
+<section 	class="tile-browser box-grid {{ spark_class }}"
+>
+	{% if ( nav ) %}
+		{%  include '/components/tile-browser/view/nav.twig' %}
+	{% endif %}
+	{{ viewer }}
+	<div 	class="tile-detail"
+	>
+		<div 	class="detail-container"
+				data-cycle-fx="scrollHorz" 
+	    		data-cycle-timeout="0" 
+	    		data-cycle-auto-height="container"
+{# 	    		data-cycle-next=".detail-pager .next"
+	    		data-cycle-prev=".detail-pager .prev" #}
+		>
+{# 			{% for tile in tiles %}
+				{% include slide_detail_template %}
+			{% endfor %} #}
+		</div>	
+		<ul class="detail-pager">
+			<li class="prev"></li>
+			<li class="next"></li>
+		</ul>
+	</div>
+	<ul class="tile-container">{% for tile in tiles %}
+			{% include slide_template %}
+	{% endfor %}</ul>
+</section>

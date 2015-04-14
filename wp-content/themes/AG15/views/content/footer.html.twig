@@ -1,0 +1,19 @@
+<footer>
+	<section class="footer-nav container">
+		<div class="sitemap">
+			{{ footer_1 }}
+			{{ footer_2 }}
+			{{ footer_3 }}
+			{{ footer_4 }}
+			{{ social_menu }}
+		</div>
+	</section>
+	<section class="footer-bottom container">
+		<div class="footer-sub">
+			{% for address in addresses %}
+				{% include 'views/content/address.twig' %}
+			{% endfor %}
+		</div>
+		<span class="copyright">&copy; {{ "now"|date("Y") }} {{site.name }} </span>
+	</section>
+</footer>

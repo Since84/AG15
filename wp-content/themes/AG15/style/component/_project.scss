@@ -1,0 +1,185 @@
+.page-template-portfolio {
+	.main-content .container{
+		padding: 0;
+	}
+}
+
+.project{
+	.profile {
+		position: relative;
+	}
+	&.box{
+		.box-content{
+			opacity: 1;
+			transition: .5s opacity ease-in-out .5s;
+			color: white;
+			
+			h2{
+				color: white;
+			}
+
+			&:hover{
+				text-decoration: none;
+			}
+		}
+		.profile{ 
+			width: 100%;
+			height: 0;
+			transition: 0s height ease-in-out;
+			overflow: hidden;
+		}
+		&.open {
+			height: 1000px;
+			width: 100%;
+			background: $lightGray;
+
+			img {
+				width: 100%;
+				max-width: 2000px; 
+				max-height:500px;
+				height: auto;
+			}
+
+			.box-content{
+				opacity:0;
+				display: none;
+				height: 100%;
+			}
+			.close { 
+				display: block;
+				position: absolute;
+				top: 20px;
+				right: 20px;
+				width: 40px;
+				height: 40px;
+				background: $close-button 50% 50% no-repeat;
+				z-index: 10;
+			}		
+		}
+	}
+}
+
+.project.detail{ 
+	display: block; 
+	background: #eee;
+	height: auto;
+
+	.close{
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		z-index: 7000;
+		display: block;
+		width: 20px;
+		height: 20px;
+		text-align: center;
+		cursor: pointer;
+		&:before{
+			content: "\f00d";
+			font-family: "FontAwesome";
+			font-size: 20px;
+		}
+		&:hover:before{
+			color: $red;
+		}
+	}
+
+	.feature-side{
+		width: 100%;
+		padding: 20px 40px 0px;
+		height: auto;
+		overflow-y: scroll;
+		height: 500px;
+
+		h2 { margin-bottom: 5px; }
+		h1 { margin-bottom: 5px; }
+
+		li { list-style: none; margin-bottom: 2px; }
+		p{ color: $text; }
+
+
+		.feature-pager {
+			height: 10px;
+			margin-bottom: 30px;
+			span {
+			    font-size: 40px;
+			    color: white;
+			    margin-right: 5px;
+			    cursor: pointer;
+			    &.cycle-pager-active {
+				    color: #bbb;
+				}
+			}
+		}
+
+		.project-profile { margin-top: 10px; }
+		.project-type { font-weight: 400; }
+		.project-services {
+			margin-top: 20px;
+			margin-bottom: 40px;
+			h2 {
+				font-weight: 400;
+				color: black; 
+				margin-bottom: 2px;
+			}
+		} 
+	}
+
+	.feature-wide{
+		.cycle-slideshow { 
+			min-height: 500px; 
+			overflow:hidden; 
+			&:empty{
+				min-height: 0px;
+				height: 0px;
+			}
+		}
+	}
+
+	@media screen and ( min-width: 780px ){
+		.feature-wide, .feature-side{ 
+			display: inline-block; 
+			vertical-align: top;
+		}
+		.feature-wide{
+			width: 70%; 
+			overflow: hidden;
+			border-right: 5px solid #bbb; 
+		}
+		.feature-side{
+			width: 25%;
+			padding: 2%;
+
+			h2 { margin-bottom: 5px; }
+			h1 { margin-bottom: 5px; }
+
+			li { list-style: none; margin-bottom: 2px; }
+
+
+			.feature-pager {
+				height: 10px;
+				margin-bottom: 30px;
+				span {
+				    font-size: 40px;
+				    color: white;
+				    margin-right: 5px;
+				    cursor: pointer;
+				    &.cycle-pager-active {
+					    color: #bbb;
+					}
+				}
+			}
+
+			.project-profile { margin-top: 10px; }
+			.project-type { font-weight: 400; }
+			.project-services {
+				margin-top: 20px;
+				h2 {
+					font-weight: 400;
+					color: black; 
+					margin-bottom: 2px;
+				}
+			}
+		}
+	}
+}

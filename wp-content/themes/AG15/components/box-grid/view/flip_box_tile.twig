@@ -1,0 +1,14 @@
+<li class="box {% for term in tile.terms('project-type') %}{{term.name|replace({"/":"-"})|lower}} {% endfor %}">
+	<div class="box-content flip-tile">
+		<div class="front" style="background-image: url({{ tile.get_thumbnail.get_src('small') }});"></div>
+		<div 
+			class="back" 
+			style="background-image: url({{ tile.get_thumbnail.get_src('small') }});"
+		>
+			<h2>
+				{{ tile.post_excerpt }}
+			</h2>
+			<p>{{ tile.post_title }}</p>				
+		</div>	
+	</div>
+</li>

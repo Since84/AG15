@@ -1,0 +1,20 @@
+<div class="subheader">
+	<div class="container">
+		{{ contact_form }}
+		<p class="headline">
+			{% if post.headline  %}{{ post.headline }}
+			{% else %}{{ post.title }}
+			{% endif %}
+		</p>
+	</div>
+</div>
+<div class="main-content">
+	<div class="container columns">
+		<div class="one-sixth column">
+			{{ categories }}
+		</div>
+		<div class="five-sixths column">
+			{{ blog }}
+		</div>
+	</div>
+</div>
