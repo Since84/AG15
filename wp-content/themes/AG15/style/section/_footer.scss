@@ -56,10 +56,10 @@ footer{
 			}
 		}		
 	}
-	.social-icons-widget{
+	.simple-social-icons{
 		display: inline-block;
 		float: right;
-		width: 170px;
+		width: 200px;
 		text-align: right;
 
 		ul, ul li {
@@ -71,6 +71,8 @@ footer{
 		@media screen and ( max-width: 720px ) {
 			width: 100%;
 			float: none;
+			text-align: center;
+			margin-top: 1em;
 			.icons-custom_small{
 				display: flex;
 				padding-top: 20px;

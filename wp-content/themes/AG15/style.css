@@ -4368,81 +4368,83 @@ footer .container {
   }
 }
 /* line 59, style/section/_footer.scss */
-.footer-nav.container .social-icons-widget {
+.footer-nav.container .simple-social-icons {
   display: inline-block;
   float: right;
-  width: 170px;
+  width: 200px;
   text-align: right;
 }
 /* line 65, style/section/_footer.scss */
-.footer-nav.container .social-icons-widget ul, .footer-nav.container .social-icons-widget ul li {
+.footer-nav.container .simple-social-icons ul, .footer-nav.container .simple-social-icons ul li {
   float: none;
 }
 /* line 68, style/section/_footer.scss */
-.footer-nav.container .social-icons-widget ul {
+.footer-nav.container .simple-social-icons ul {
   margin: 0;
 }
 @media screen and (max-width: 720px) {
   /* line 59, style/section/_footer.scss */
-  .footer-nav.container .social-icons-widget {
+  .footer-nav.container .simple-social-icons {
     width: 100%;
     float: none;
+    text-align: center;
+    margin-top: 1em;
   }
-  /* line 74, style/section/_footer.scss */
-  .footer-nav.container .social-icons-widget .icons-custom_small {
+  /* line 76, style/section/_footer.scss */
+  .footer-nav.container .simple-social-icons .icons-custom_small {
     display: flex;
     padding-top: 20px;
     margin: auto;
   }
-  /* line 78, style/section/_footer.scss */
-  .footer-nav.container .social-icons-widget .icons-custom_small li {
+  /* line 80, style/section/_footer.scss */
+  .footer-nav.container .simple-social-icons .icons-custom_small li {
     flex: 1;
     text-align: center;
   }
 }
 
-/* line 87, style/section/_footer.scss */
+/* line 89, style/section/_footer.scss */
 .footer-sub {
   display: inline-block;
 }
-/* line 90, style/section/_footer.scss */
+/* line 92, style/section/_footer.scss */
 .footer-sub .address li {
   display: inline-block;
 }
-/* line 91, style/section/_footer.scss */
+/* line 93, style/section/_footer.scss */
 .footer-sub .address .name {
   width: 120px;
   margin-right: 10px;
 }
-/* line 92, style/section/_footer.scss */
+/* line 94, style/section/_footer.scss */
 .footer-sub .address .fax, .footer-sub .address .phone span {
   display: none;
 }
 @media screen and (max-width: 720px) {
-  /* line 87, style/section/_footer.scss */
+  /* line 89, style/section/_footer.scss */
   .footer-sub {
     width: 100%;
     display: flex;
   }
-  /* line 97, style/section/_footer.scss */
+  /* line 99, style/section/_footer.scss */
   .footer-sub .address {
     margin-bottom: 1em;
     flex: 1;
   }
-  /* line 101, style/section/_footer.scss */
+  /* line 103, style/section/_footer.scss */
   .footer-sub li {
     display: list-item;
     width: 100%;
   }
 }
 
-/* line 108, style/section/_footer.scss */
+/* line 110, style/section/_footer.scss */
 .footer-bottom.container {
   padding: 10px 40px;
 }
 
 @media screen and (min-width: 720px) {
-  /* line 113, style/section/_footer.scss */
+  /* line 115, style/section/_footer.scss */
   .copyright {
     float: right;
   }
