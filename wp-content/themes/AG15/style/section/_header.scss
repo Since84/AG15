@@ -95,6 +95,12 @@ header {
 	.wpcf7{
 		h3{ display: none; }
 		p{ margin:0; }
-		input{ margin-right: 10px; }
+		input{ 
+			margin-right: 10px; 
+			@media screen and ( max-width: 720px ){
+			  float: right;
+			  margin-top: 10px;
+			}
+		}
 	}
 }

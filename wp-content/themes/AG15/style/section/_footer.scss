@@ -1,21 +1,31 @@
 footer{
-	padding: 10px 40px;
+	// padding: 0px 40px;
+	background: url(style/images/diagonal-stripes.png);
+	.container{
+		background: white;
+		padding: 0 40px;
+	}
+	@media screen and ( max-width: 720px ) {
+		padding: 0;
+	}
 }
-.footer-nav {
+.footer-nav.container {
 	border-bottom: 4px solid $lightGray;
-	margin-bottom: 10px;
 	ul{
 		width: 84%;
 		// min-width: 400px;
 		display: inline-block;
 		vertical-align: top;
 		padding: 10px 0;
+		@media screen and ( max-width: 720px ) {
+			padding: 0;
+		}
 		> li {
 			display: inline-block;
 			width: auto;
 			vertical-align: top;
 			margin-bottom: 5px;
-			margin-right: 20px;
+			margin-right: 0px;
 			a {
 				text-decoration: none;
 				font-weight: 400;
@@ -26,16 +36,30 @@ footer{
 			}
 		}
 	}
-	.sitemap nav{
-		display: inline-block;
-		ul{
-			li{ list-style: initial; }
-		}
+	.sitemap {
+		nav{
+			display: inline-block;
+			@media screen and ( max-width: 720px ){
+				width: 41vw;
+			}
+			ul{
+				li{ list-style: initial; }
+				@media screen and ( max-width: 720px ){
+					width: 48%;
+					display: flex;
+					width: auto;
+					li{
+						display: inline-block;
+						flex: 1;
+					}
+				}
+			}
+		}		
 	}
 	.social-icons-widget{
 		display: inline-block;
 		float: right;
-		width: 200px;
+		width: 170px;
 		text-align: right;
 
 		ul, ul li {
@@ -43,6 +67,19 @@ footer{
 		}
 		ul {
 			margin: 0;
+		}
+		@media screen and ( max-width: 720px ) {
+			width: 100%;
+			float: none;
+			.icons-custom_small{
+				display: flex;
+				padding-top: 20px;
+				margin: auto;
+				li{
+					flex: 1;
+					text-align: center;
+				}
+			}
 		}
 	}
 }
@@ -54,7 +91,26 @@ footer{
 		.name { width: 120px; margin-right: 10px; }
 		.fax, .phone span { display: none; }
 	}
+	@media screen and ( max-width: 720px ) {
+		width: 100%;
+		display: flex;
+		.address{
+			margin-bottom: 1em;
+			flex: 1;
+		}
+		li{
+			display: list-item;
+			width: 100%;
+		}
+	}
 }
-.copyright {
-	float: right;
+
+.footer-bottom.container{
+	padding: 10px 40px;
+}
+
+@media screen and ( min-width: 720px ) {
+	.copyright {
+		float: right;
+	}
 }

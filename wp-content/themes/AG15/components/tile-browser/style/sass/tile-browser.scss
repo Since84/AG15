@@ -83,7 +83,7 @@
 			&.active {
 				background: none !important;
 				color: black !important;
-				line-height: 1.5em;
+				line-height: 1.8em;
 				font-weight: bold;
 			}
 		}
@@ -115,6 +115,7 @@
 			height: 50px;
 			cursor: pointer;
 			border-left: 1px solid #eee;
+			margin:0;
 			a{ text-decoration: none; }
 
 		}
@@ -128,7 +129,7 @@
 			li {
 				height: 0;
 				overflow: hidden;
-				width: 90%;
+				width: 100%;
 				max-width: 900px;
 				margin: 5px 40px;
 				text-align: center;
@@ -147,7 +148,7 @@
 				}
 				&.active{
 					line-height: 2em;
-					padding: 5px;
+					padding: 5px 0;
 					height: 2em;
 				} 
 
@@ -170,6 +171,7 @@
 					&.active, &:hover{ 
 						border-radius: 10px;
 						background: $tertiary;
+
 					}
 				}	
 

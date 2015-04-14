@@ -2918,7 +2918,7 @@
   .tile-control-bar li.filter.active {
     background: none !important;
     color: black !important;
-    line-height: 1.5em;
+    line-height: 1.8em;
     font-weight: bold;
   }
 }
@@ -2951,8 +2951,9 @@ body:not(.fullscreen-browser) .tile-browser.fixed .tile-control-bar {
   height: 50px;
   cursor: pointer;
   border-left: 1px solid #eee;
+  margin: 0;
 }
-/* line 118, sass/tile-browser.scss */
+/* line 119, sass/tile-browser.scss */
 .tile-browser nav li a {
   text-decoration: none;
 }
@@ -2965,11 +2966,11 @@ body:not(.fullscreen-browser) .tile-browser.fixed .tile-control-bar {
     border-radius: 20px;
     font-size: 20px;
   }
-  /* line 128, sass/tile-browser.scss */
+  /* line 129, sass/tile-browser.scss */
   .tile-browser nav li {
     height: 0;
     overflow: hidden;
-    width: 90%;
+    width: 100%;
     max-width: 900px;
     margin: 5px 40px;
     text-align: center;
@@ -2981,40 +2982,40 @@ body:not(.fullscreen-browser) .tile-browser.fixed .tile-control-bar {
     transition: .5s height ease-in-out ,.5s padding ease-in-out ,.5s margin ease-in-out;
     cursor: pointer;
   }
-  /* line 145, sass/tile-browser.scss */
+  /* line 146, sass/tile-browser.scss */
   .tile-browser nav li:not(:last-child) {
     border-right: none;
   }
-  /* line 148, sass/tile-browser.scss */
+  /* line 149, sass/tile-browser.scss */
   .tile-browser nav li.active {
     line-height: 2em;
-    padding: 5px;
+    padding: 5px 0;
     height: 2em;
   }
-  /* line 154, sass/tile-browser.scss */
+  /* line 155, sass/tile-browser.scss */
   .tile-browser nav li:not(.active) span {
     opacity: 0;
     transition: .25s opacity ease-in-out 0s;
   }
-  /* line 160, sass/tile-browser.scss */
+  /* line 161, sass/tile-browser.scss */
   .tile-browser nav.open li {
     height: 2em;
     line-height: 1.5em;
     padding: 5px 0;
     margin: auto;
   }
-  /* line 166, sass/tile-browser.scss */
+  /* line 167, sass/tile-browser.scss */
   .tile-browser nav.open li span {
     opacity: 1;
     transition-delay: .5s;
   }
-  /* line 170, sass/tile-browser.scss */
+  /* line 171, sass/tile-browser.scss */
   .tile-browser nav.open li.active, .tile-browser nav.open li:hover {
     border-radius: 10px;
     background: #f8f8f8;
   }
 }
-/* line 179, sass/tile-browser.scss */
+/* line 181, sass/tile-browser.scss */
 .tile-browser .browser-controls {
   display: inline-block;
   vertical-align: top;
@@ -3023,7 +3024,7 @@ body:not(.fullscreen-browser) .tile-browser.fixed .tile-control-bar {
   height: auto;
   text-align: right;
 }
-/* line 186, sass/tile-browser.scss */
+/* line 188, sass/tile-browser.scss */
 .tile-browser .browser-controls li {
   display: inline-block;
   vertical-align: top;
@@ -3032,42 +3033,42 @@ body:not(.fullscreen-browser) .tile-browser.fixed .tile-control-bar {
   height: 50px;
   cursor: pointer;
 }
-/* line 194, sass/tile-browser.scss */
+/* line 196, sass/tile-browser.scss */
 .tile-browser .browser-controls li:first-of-type {
   border-left: 1px solid #eee;
 }
-/* line 197, sass/tile-browser.scss */
+/* line 199, sass/tile-browser.scss */
 .tile-browser .browser-controls li.close {
   width: 0;
   border: none;
   padding: 0;
 }
-/* line 204, sass/tile-browser.scss */
+/* line 206, sass/tile-browser.scss */
 .tile-browser .browser-controls .fullscreen:before {
   font-size: 20px;
   text-align: right;
 }
 @media screen and (max-width: 780px) {
-  /* line 179, sass/tile-browser.scss */
+  /* line 181, sass/tile-browser.scss */
   .tile-browser .browser-controls {
     display: none;
   }
 }
-/* line 215, sass/tile-browser.scss */
+/* line 217, sass/tile-browser.scss */
 .tile-browser .tile-detail {
   overflow: hidden;
   transition: max-height 1s ease-in-out;
   max-height: 2000px;
 }
-/* line 220, sass/tile-browser.scss */
+/* line 222, sass/tile-browser.scss */
 .tile-browser .tile-detail:not(.open) {
   max-height: 0px;
 }
-/* line 225, sass/tile-browser.scss */
+/* line 227, sass/tile-browser.scss */
 .tile-browser .tile-detail .detail-container > * {
   width: 100%;
 }
-/* line 230, sass/tile-browser.scss */
+/* line 232, sass/tile-browser.scss */
 .tile-browser .tile-detail .detail-pager {
   width: 100%;
   margin: auto;
@@ -3075,13 +3076,13 @@ body:not(.fullscreen-browser) .tile-browser.fixed .tile-control-bar {
   right: 0;
   white-space: nowrap;
 }
-/* line 236, sass/tile-browser.scss */
+/* line 238, sass/tile-browser.scss */
 .tile-browser .tile-detail .detail-pager li {
   display: inline-block;
   width: 50%;
   cursor: pointer;
 }
-/* line 240, sass/tile-browser.scss */
+/* line 242, sass/tile-browser.scss */
 .tile-browser .tile-detail .detail-pager li:before {
   display: inline-block;
   font-family: "FontAwesome";
@@ -3089,19 +3090,19 @@ body:not(.fullscreen-browser) .tile-browser.fixed .tile-control-bar {
   padding: 10px 40px;
   width: 50px;
 }
-/* line 247, sass/tile-browser.scss */
+/* line 249, sass/tile-browser.scss */
 .tile-browser .tile-detail .detail-pager li.next {
   text-align: right;
 }
-/* line 249, sass/tile-browser.scss */
+/* line 251, sass/tile-browser.scss */
 .tile-browser .tile-detail .detail-pager li.next:before {
   content: "\f061";
 }
-/* line 254, sass/tile-browser.scss */
+/* line 256, sass/tile-browser.scss */
 .tile-browser .tile-detail .detail-pager li.prev:before {
   content: "\f060";
 }
-/* line 265, sass/tile-browser.scss */
+/* line 267, sass/tile-browser.scss */
 .tile-browser .flip-tile {
   position: relative;
 }
@@ -3167,45 +3168,45 @@ body:not(.fullscreen-browser) .tile-browser.fixed .tile-control-bar {
   transform: perspective(800px) rotateY(0);
 }
 
-/* line 270, sass/tile-browser.scss */
+/* line 272, sass/tile-browser.scss */
 header {
   transition: .5s margin ease-in-out;
 }
 
-/* line 273, sass/tile-browser.scss */
+/* line 275, sass/tile-browser.scss */
 .container {
   transition: .5s max-width ease-in-out;
 }
 
-/* line 278, sass/tile-browser.scss */
+/* line 280, sass/tile-browser.scss */
 .fullscreen-browser header {
   margin-top: -100px;
 }
-/* line 281, sass/tile-browser.scss */
+/* line 283, sass/tile-browser.scss */
 .fullscreen-browser .tile-browser {
   padding-top: 50px !important;
 }
 @media screen and (max-width: 780px) {
-  /* line 281, sass/tile-browser.scss */
+  /* line 283, sass/tile-browser.scss */
   .fullscreen-browser .tile-browser {
     padding-top: 75px !important;
   }
 }
-/* line 289, sass/tile-browser.scss */
+/* line 291, sass/tile-browser.scss */
 .fullscreen-browser .tile-browser.fullscreen .tile-control-bar {
   position: fixed;
   top: 0;
 }
-/* line 293, sass/tile-browser.scss */
+/* line 295, sass/tile-browser.scss */
 .fullscreen-browser .main-content .container {
   max-width: 100%;
   padding: 0;
 }
-/* line 297, sass/tile-browser.scss */
+/* line 299, sass/tile-browser.scss */
 .fullscreen-browser .footer-nav.container {
   max-width: 90%;
 }
-/* line 300, sass/tile-browser.scss */
+/* line 302, sass/tile-browser.scss */
 .fullscreen-browser .tile-control-bar {
   position: absolute;
   z-index: 1000;

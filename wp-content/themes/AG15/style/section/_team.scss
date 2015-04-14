@@ -14,21 +14,66 @@
 	}
 
 	.member-detail{
-		background: $lightGray;
-		max-height: 0;
-		overflow: hidden;
+		// max-height: 0;
+		// overflow: hidden;
+		padding: 40px;
 
 		.column{
 			padding-top: 0;
 		}
 	}
 
+	.tile-detail{
+		background: $lightGray;
+		transition: 1s height linear;
+	}
 	.tile-detail.open .member-detail{
-		padding: 40px;
-		max-height: 2000px;
+		// padding: 40px;
+		// max-height: 2000px;
 	}
 	.member-position{
 		font-weight: normal;
+	}
+
+	.tile-detail.open{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		margin-bottom: 40px;
+		overflow-y: scroll;
+		z-index: 1000;
+		.detail-container{
+			height: 100%;
+		}
+	}
+
+	.tile-detail .close{
+		position: absolute;
+		display: block;
+		width: 20px;
+		height: 20px;
+		top: 20px;
+		right: 20px;
+		&:before{
+			content: '';
+			background: url("style/images/icons/close-button.png");
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+		}
+	}
+
+	.detail-pager{
+		display: block;
+		z-index: 1000;
+	}
+
+	.team.box{
+		h2{
+			color: white;
+			margin-bottom: 0;
+		}
 	}
 
 }

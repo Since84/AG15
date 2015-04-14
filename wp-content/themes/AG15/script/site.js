@@ -25,7 +25,7 @@
 
         //Team Grid
           ,"click .team.box:not(.open)" : "openMember"
-          ,"click .team.detail .close"  : "closeMember"
+          ,"click .member-detail .close"  : "closeMember"
           ,"click .detail-pager li.next": "nextMember"
           ,"click .detail-pager li.prev": "prevMember"
 
@@ -228,7 +228,8 @@
           }
       }
       ,closeMember: function(e, elem){
-
+        var self = this;
+        $('.tile-detail').removeClass('open');       
       }
 
       //Connect

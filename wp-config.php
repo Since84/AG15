@@ -19,11 +19,13 @@ define('WP_CACHE', true); // Added by W3 Total Cache
  * @package WordPress
  */	
 
-if ( strpos($_SERVER['HTTP_HOST'], 'rights') !== false) {
-	require_once('db-config/r4g.config.php');
-}elseif ( strpos($_SERVER['HTTP_HOST'], 'ag.dev') !== false) {
-	require_once('db-config/ag.config.php');
-}
+define('DB_NAME', 'ag');
+
+/** MySQL database username */
+define('DB_USER', 'root');
+
+/** MySQL database password */
+define('DB_PASSWORD', 'galaxy1');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
