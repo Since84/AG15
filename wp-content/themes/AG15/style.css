@@ -7,7 +7,7 @@
  *	Template: Spark15
  */
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700,300");
-/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -29,45 +29,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -3921,65 +3921,70 @@ header .mobile-logo {
   min-height: 0px;
   height: 0px;
 }
+/* line 136, style/component/_project.scss */
+.project.detail .feature-wide .cycle-slideshow img {
+  width: 100%;
+  height: auto;
+}
 @media screen and (min-width: 780px) {
-  /* line 140, style/component/_project.scss */
+  /* line 144, style/component/_project.scss */
   .project.detail .feature-wide, .project.detail .feature-side {
     display: inline-block;
     vertical-align: top;
   }
-  /* line 144, style/component/_project.scss */
+  /* line 148, style/component/_project.scss */
   .project.detail .feature-wide {
     width: 70%;
     overflow: hidden;
     border-right: 5px solid #bbb;
   }
-  /* line 149, style/component/_project.scss */
+  /* line 153, style/component/_project.scss */
   .project.detail .feature-side {
     width: 25%;
     padding: 2%;
   }
-  /* line 153, style/component/_project.scss */
+  /* line 157, style/component/_project.scss */
   .project.detail .feature-side h2 {
     margin-bottom: 5px;
   }
-  /* line 154, style/component/_project.scss */
+  /* line 158, style/component/_project.scss */
   .project.detail .feature-side h1 {
     margin-bottom: 5px;
   }
-  /* line 156, style/component/_project.scss */
+  /* line 160, style/component/_project.scss */
   .project.detail .feature-side li {
     list-style: none;
     margin-bottom: 2px;
   }
-  /* line 159, style/component/_project.scss */
+  /* line 163, style/component/_project.scss */
   .project.detail .feature-side .feature-pager {
     height: 10px;
     margin-bottom: 30px;
   }
-  /* line 162, style/component/_project.scss */
+  /* line 166, style/component/_project.scss */
   .project.detail .feature-side .feature-pager span {
     font-size: 40px;
     color: white;
     margin-right: 5px;
     cursor: pointer;
   }
-  /* line 167, style/component/_project.scss */
+  /* line 171, style/component/_project.scss */
   .project.detail .feature-side .feature-pager span.cycle-pager-active {
     color: #bbb;
   }
-  /* line 173, style/component/_project.scss */
+  /* line 177, style/component/_project.scss */
   .project.detail .feature-side .project-profile {
     margin-top: 10px;
   }
-  /* line 174, style/component/_project.scss */
+  /* line 178, style/component/_project.scss */
   .project.detail .feature-side .project-type {
     font-weight: 400;
   }
-  /* line 175, style/component/_project.scss */
+  /* line 179, style/component/_project.scss */
   .project.detail .feature-side .project-services {
     margin-top: 20px;
   }
-  /* line 177, style/component/_project.scss */
+  /* line 181, style/component/_project.scss */
   .project.detail .feature-side .project-services h2 {
     font-weight: 400;
     color: black;
@@ -4009,13 +4014,14 @@ header .mobile-logo {
 /* line 26, style/section/_team.scss */
 .page-template-team-template .tile-detail {
   background: #f4f4f4;
+  transition: none;
   transition: 1s height linear;
 }
-/* line 34, style/section/_team.scss */
+/* line 35, style/section/_team.scss */
 .page-template-team-template .member-position {
   font-weight: normal;
 }
-/* line 38, style/section/_team.scss */
+/* line 39, style/section/_team.scss */
 .page-template-team-template .tile-detail.open {
   position: absolute;
   width: 100%;
@@ -4024,11 +4030,11 @@ header .mobile-logo {
   overflow-y: scroll;
   z-index: 1000;
 }
-/* line 45, style/section/_team.scss */
+/* line 46, style/section/_team.scss */
 .page-template-team-template .tile-detail.open .detail-container {
   height: 100%;
 }
-/* line 50, style/section/_team.scss */
+/* line 51, style/section/_team.scss */
 .page-template-team-template .tile-detail .close {
   position: absolute;
   display: block;
@@ -4037,7 +4043,7 @@ header .mobile-logo {
   top: 20px;
   right: 20px;
 }
-/* line 57, style/section/_team.scss */
+/* line 58, style/section/_team.scss */
 .page-template-team-template .tile-detail .close:before {
   content: '';
   background: url("style/images/icons/close-button.png");
@@ -4046,12 +4052,12 @@ header .mobile-logo {
   height: 100%;
   position: absolute;
 }
-/* line 67, style/section/_team.scss */
+/* line 68, style/section/_team.scss */
 .page-template-team-template .detail-pager {
   display: block;
   z-index: 1000;
 }
-/* line 73, style/section/_team.scss */
+/* line 74, style/section/_team.scss */
 .page-template-team-template .team.box h2 {
   color: white;
   margin-bottom: 0;

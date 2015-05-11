@@ -25,6 +25,7 @@
 
 	.tile-detail{
 		background: $lightGray;
+		transition: none;
 		transition: 1s height linear;
 	}
 	.tile-detail.open .member-detail{
