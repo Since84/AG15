@@ -3959,7 +3959,7 @@ header .mobile-logo {
   }
   /* line 170, style/component/_project.scss */
   .project.detail .feature-wide {
-    height: 70vw;
+    height: 72vw;
   }
 }
 @media screen and (min-width: 780px) {
