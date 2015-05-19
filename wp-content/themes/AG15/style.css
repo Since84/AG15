@@ -3959,65 +3959,69 @@ header .mobile-logo {
   }
 }
 @media screen and (min-width: 780px) {
-  /* line 172, style/component/_project.scss */
+  /* line 67, style/component/_project.scss */
+  .project.detail {
+    height: 72vw;
+  }
+  /* line 178, style/component/_project.scss */
   .project.detail .feature-wide, .project.detail .feature-side {
     display: inline-block;
     vertical-align: top;
   }
-  /* line 176, style/component/_project.scss */
+  /* line 182, style/component/_project.scss */
   .project.detail .feature-wide {
     width: 70%;
     overflow: hidden;
     border-right: 5px solid #bbb;
     min-height: 5;
   }
-  /* line 182, style/component/_project.scss */
+  /* line 188, style/component/_project.scss */
   .project.detail .feature-side {
     width: 25%;
     padding: 2%;
   }
-  /* line 186, style/component/_project.scss */
+  /* line 192, style/component/_project.scss */
   .project.detail .feature-side h2 {
     margin-bottom: 5px;
   }
-  /* line 187, style/component/_project.scss */
+  /* line 193, style/component/_project.scss */
   .project.detail .feature-side h1 {
     margin-bottom: 5px;
   }
-  /* line 189, style/component/_project.scss */
+  /* line 195, style/component/_project.scss */
   .project.detail .feature-side li {
     list-style: none;
     margin-bottom: 2px;
   }
-  /* line 192, style/component/_project.scss */
+  /* line 198, style/component/_project.scss */
   .project.detail .feature-side .feature-pager {
     height: 10px;
     margin-bottom: 30px;
   }
-  /* line 195, style/component/_project.scss */
+  /* line 201, style/component/_project.scss */
   .project.detail .feature-side .feature-pager span {
     font-size: 40px;
     color: white;
     margin-right: 5px;
     cursor: pointer;
   }
-  /* line 200, style/component/_project.scss */
+  /* line 206, style/component/_project.scss */
   .project.detail .feature-side .feature-pager span.cycle-pager-active {
     color: #bbb;
   }
-  /* line 206, style/component/_project.scss */
+  /* line 212, style/component/_project.scss */
   .project.detail .feature-side .project-profile {
     margin-top: 10px;
   }
-  /* line 207, style/component/_project.scss */
+  /* line 213, style/component/_project.scss */
   .project.detail .feature-side .project-type {
     font-weight: 400;
   }
-  /* line 208, style/component/_project.scss */
+  /* line 214, style/component/_project.scss */
   .project.detail .feature-side .project-services {
     margin-top: 20px;
   }
-  /* line 210, style/component/_project.scss */
+  /* line 216, style/component/_project.scss */
   .project.detail .feature-side .project-services h2 {
     font-weight: 400;
     color: black;

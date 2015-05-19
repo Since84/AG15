@@ -166,9 +166,15 @@
 				margin-top: 7px;
 			}
 		}
+
+		.feature-wide{
+
+		}
 	}
 
 	@media screen and ( min-width: 780px ){
+		height: 72vw;
+
 		.feature-wide, .feature-side{ 
 			display: inline-block; 
 			vertical-align: top;
