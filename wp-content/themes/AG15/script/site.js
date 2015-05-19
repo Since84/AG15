@@ -16,23 +16,23 @@
   		events: {
         //Mobile Menu
           // "click .mobile-btn": "doSidr"
-      		"click .mobile-btn": "doMenu"
+      		// "click .mobile-btn": "doMenu"
 
-        //Project Grid
-          ,"click .project.box:not(.open)": "openProject"
-          ,"click .project.detail .close": "closeProject"
-          ,"click .detail-pager li.next": "nextProject"
-          ,"click .detail-pager li.prev": "prevProject"
+        // //Project Grid
+        //   ,"click .project.box:not(.open)": "openProject"
+        //   ,"click .project.detail .close": "closeProject"
+        //   ,"click .detail-pager li.next": "nextProject"
+        //   ,"click .detail-pager li.prev": "prevProject"
 
-        //Team Grid
-          ,"click .team.box:not(.open)" : "openMember"
-          ,"click .member-detail .close"  : "closeMember"
-          ,"click .detail-pager li.next": "nextMember"
-          ,"click .detail-pager li.prev": "prevMember"
+        // //Team Grid
+        //   ,"click .team.box:not(.open)" : "openMember"
+        //   ,"click .member-detail .close"  : "closeMember"
+        //   ,"click .detail-pager li.next": "nextMember"
+        //   ,"click .detail-pager li.prev": "prevMember"
 
-        //Contact form
-          ,"click .form-trigger": "toggleForm"
-          ,"change .interest select": "selectChange"
+        // //Contact form
+        //   ,"click .form-trigger": "toggleForm"
+        //   ,"change .interest select": "selectChange"
   		},
 
 
@@ -42,6 +42,29 @@
         this.doIsotope();
         this.smoothDivScroll();
         var browser = new TileBrowser();
+
+        //Mobile Menu
+          // "click .mobile-btn": "doSidr"
+          $('.mobile-btn').click(this.doMenu);
+
+        //Project Grid
+          $('.project.box:not(.open)').click(this.openProject);
+          $('.project.detail .close').click(this.closeProject);
+          $('.detail-pager li.next').click(this.nextProject);
+          $('.detail-pager li.prev').click(this.prevProject);
+
+        //Team Grid
+          $('.team.box:not(.open)').click(this.openMember);
+          $('.member-detail .close').click(this.closeMember);
+          $('.detail-pager li.next').click(this.nextMember);
+          $('.detail-pager li.prev').click(this.prevMember);
+
+        //Contact form
+          $('.form-trigger').click(this.toggleForm);
+          $('.interest select').on('change', this.selectChange)        
+
+
+
   		}
 
   		,doSidr: function(){
