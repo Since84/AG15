@@ -4029,49 +4029,51 @@ header .mobile-logo {
   .project.detail .feature-side {
     width: 25%;
     padding: 2%;
+    height: 49vw;
+    overflow: scroll;
   }
-  /* line 192, style/component/_project.scss */
+  /* line 194, style/component/_project.scss */
   .project.detail .feature-side h2 {
     margin-bottom: 5px;
   }
-  /* line 193, style/component/_project.scss */
+  /* line 195, style/component/_project.scss */
   .project.detail .feature-side h1 {
     margin-bottom: 5px;
   }
-  /* line 195, style/component/_project.scss */
+  /* line 197, style/component/_project.scss */
   .project.detail .feature-side li {
     list-style: none;
     margin-bottom: 2px;
   }
-  /* line 198, style/component/_project.scss */
+  /* line 200, style/component/_project.scss */
   .project.detail .feature-side .feature-pager {
     height: 10px;
     margin-bottom: 30px;
   }
-  /* line 201, style/component/_project.scss */
+  /* line 203, style/component/_project.scss */
   .project.detail .feature-side .feature-pager span {
     font-size: 40px;
     color: white;
     margin-right: 5px;
     cursor: pointer;
   }
-  /* line 206, style/component/_project.scss */
+  /* line 208, style/component/_project.scss */
   .project.detail .feature-side .feature-pager span.cycle-pager-active {
     color: #bbb;
   }
-  /* line 212, style/component/_project.scss */
+  /* line 214, style/component/_project.scss */
   .project.detail .feature-side .project-profile {
     margin-top: 10px;
   }
-  /* line 213, style/component/_project.scss */
+  /* line 215, style/component/_project.scss */
   .project.detail .feature-side .project-type {
     font-weight: 400;
   }
-  /* line 214, style/component/_project.scss */
+  /* line 216, style/component/_project.scss */
   .project.detail .feature-side .project-services {
     margin-top: 20px;
   }
-  /* line 216, style/component/_project.scss */
+  /* line 218, style/component/_project.scss */
   .project.detail .feature-side .project-services h2 {
     font-weight: 400;
     color: black;
