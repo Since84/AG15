@@ -4403,25 +4403,25 @@ li.go-back-button a {
 
 @media screen and (max-width: 720px) {
   /* line 88, style/section/_blog.scss */
-  .page-template-blogroll .blog-feed, .category .blog-feed, .author .blog-feed {
+  .page-template-blogroll .blog-feed, .category .blog-feed, .author .blog-feed, .single .blog-feed {
     margin-bottom: 2em;
   }
   /* line 91, style/section/_blog.scss */
-  .page-template-blogroll .scrollingHotSpotLeft, .page-template-blogroll .scrollingHotSpotRight, .category .scrollingHotSpotLeft, .category .scrollingHotSpotRight, .author .scrollingHotSpotLeft, .author .scrollingHotSpotRight {
+  .page-template-blogroll .scrollingHotSpotLeft, .page-template-blogroll .scrollingHotSpotRight, .category .scrollingHotSpotLeft, .category .scrollingHotSpotRight, .author .scrollingHotSpotLeft, .author .scrollingHotSpotRight, .single .scrollingHotSpotLeft, .single .scrollingHotSpotRight {
     display: none !important;
   }
   /* line 94, style/section/_blog.scss */
-  .page-template-blogroll .scrollableArea, .category .scrollableArea, .author .scrollableArea {
+  .page-template-blogroll .scrollableArea, .category .scrollableArea, .author .scrollableArea, .single .scrollableArea {
     width: 72vw !important;
     white-space: normal;
   }
   /* line 98, style/section/_blog.scss */
-  .page-template-blogroll .one-sixth, .category .one-sixth, .author .one-sixth {
+  .page-template-blogroll .one-sixth, .category .one-sixth, .author .one-sixth, .single .one-sixth {
     margin-top: 0px;
     border-bottom: 1px solid #eee;
   }
   /* line 101, style/section/_blog.scss */
-  .page-template-blogroll .one-sixth nav, .category .one-sixth nav, .author .one-sixth nav {
+  .page-template-blogroll .one-sixth nav, .category .one-sixth nav, .author .one-sixth nav, .single .one-sixth nav {
     max-height: 2.5em;
     padding: 10px 0;
     transition: .5s all linear;
@@ -4429,39 +4429,39 @@ li.go-back-button a {
     font-size: 16px;
   }
   /* line 107, style/section/_blog.scss */
-  .page-template-blogroll .one-sixth nav h2, .category .one-sixth nav h2, .author .one-sixth nav h2 {
+  .page-template-blogroll .one-sixth nav h2, .category .one-sixth nav h2, .author .one-sixth nav h2, .single .one-sixth nav h2 {
     font-size: 16px;
   }
   /* line 110, style/section/_blog.scss */
-  .page-template-blogroll .one-sixth nav ul, .category .one-sixth nav ul, .author .one-sixth nav ul {
+  .page-template-blogroll .one-sixth nav ul, .category .one-sixth nav ul, .author .one-sixth nav ul, .single .one-sixth nav ul {
     opacity: 0;
     transition: .5s all linear;
   }
   /* line 113, style/section/_blog.scss */
-  .page-template-blogroll .one-sixth nav ul li, .category .one-sixth nav ul li, .author .one-sixth nav ul li {
+  .page-template-blogroll .one-sixth nav ul li, .category .one-sixth nav ul li, .author .one-sixth nav ul li, .single .one-sixth nav ul li {
     padding: 5px 0;
   }
   /* line 117, style/section/_blog.scss */
-  .page-template-blogroll .one-sixth nav:hover, .category .one-sixth nav:hover, .author .one-sixth nav:hover {
+  .page-template-blogroll .one-sixth nav:hover, .category .one-sixth nav:hover, .author .one-sixth nav:hover, .single .one-sixth nav:hover {
     max-height: 1000px;
   }
   /* line 119, style/section/_blog.scss */
-  .page-template-blogroll .one-sixth nav:hover ul, .category .one-sixth nav:hover ul, .author .one-sixth nav:hover ul {
+  .page-template-blogroll .one-sixth nav:hover ul, .category .one-sixth nav:hover ul, .author .one-sixth nav:hover ul, .single .one-sixth nav:hover ul {
     opacity: 1;
     transition-delay: opacity .5s;
   }
   /* line 128, style/section/_blog.scss */
-  .page-template-blogroll .five-sixths, .category .five-sixths, .author .five-sixths {
+  .page-template-blogroll .five-sixths, .category .five-sixths, .author .five-sixths, .single .five-sixths {
     margin-top: 1em;
   }
   /* line 130, style/section/_blog.scss */
-  .page-template-blogroll .five-sixths .news-post, .category .five-sixths .news-post, .author .five-sixths .news-post {
+  .page-template-blogroll .five-sixths .news-post, .category .five-sixths .news-post, .author .five-sixths .news-post, .single .five-sixths .news-post {
     margin-bottom: 2em;
     border-bottom: 1px solid #bbb;
     padding-bottom: 10px;
   }
   /* line 134, style/section/_blog.scss */
-  .page-template-blogroll .five-sixths .news-post .post-title, .category .five-sixths .news-post .post-title, .author .five-sixths .news-post .post-title {
+  .page-template-blogroll .five-sixths .news-post .post-title, .category .five-sixths .news-post .post-title, .author .five-sixths .news-post .post-title, .single .five-sixths .news-post .post-title {
     height: auto;
     font-size: 16px;
   }
