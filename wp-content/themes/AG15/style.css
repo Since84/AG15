@@ -3500,22 +3500,26 @@ header nav .current_page_item a {
 header .mobile-logo {
   display: none;
 }
+/* line 65, style/section/_header.scss */
+header .mobile-btn {
+  display: none;
+}
 @media screen and (max-width: 720px) {
   /* line 3, style/section/_header.scss */
   header {
     height: 75px;
   }
-  /* line 67, style/section/_header.scss */
+  /* line 70, style/section/_header.scss */
   header .mobile-logo {
     display: block;
   }
-  /* line 68, style/section/_header.scss */
+  /* line 71, style/section/_header.scss */
   header .desktop-logo {
     display: none;
     width: 90px;
     line-height: 1.5em;
   }
-  /* line 73, style/section/_header.scss */
+  /* line 76, style/section/_header.scss */
   header nav {
     position: absolute;
     top: 100%;
@@ -3527,17 +3531,17 @@ header .mobile-logo {
     z-index: 9000;
     transition: all .5s ease-in-out;
   }
-  /* line 85, style/section/_header.scss */
+  /* line 88, style/section/_header.scss */
   header nav.on {
     max-height: 1000px;
     padding: 1em;
   }
-  /* line 89, style/section/_header.scss */
+  /* line 92, style/section/_header.scss */
   header nav.on li {
     opacity: 1;
     transition-delay: .5s;
   }
-  /* line 95, style/section/_header.scss */
+  /* line 98, style/section/_header.scss */
   header nav li {
     display: list-item;
     width: 100%;
@@ -3549,11 +3553,11 @@ header .mobile-logo {
     opacity: 0;
     transition: .25s opacity ease-in-out;
   }
-  /* line 105, style/section/_header.scss */
+  /* line 108, style/section/_header.scss */
   header nav li.current_page_item a {
     background: none;
   }
-  /* line 108, style/section/_header.scss */
+  /* line 111, style/section/_header.scss */
   header nav li a {
     background: none;
     width: 100%;
@@ -3563,16 +3567,16 @@ header .mobile-logo {
     font-weight: 700;
     font-size: 20px;
   }
-  /* line 116, style/section/_header.scss */
+  /* line 119, style/section/_header.scss */
   header nav li a:hover {
     color: red;
     background: none;
   }
-  /* line 127, style/section/_header.scss */
+  /* line 130, style/section/_header.scss */
   header .container {
     height: 75px;
   }
-  /* line 131, style/section/_header.scss */
+  /* line 134, style/section/_header.scss */
   header .mobile-btn {
     display: inline-block;
     width: 45px;
@@ -3588,24 +3592,24 @@ header .mobile-logo {
   }
 }
 
-/* line 148, style/section/_header.scss */
+/* line 151, style/section/_header.scss */
 .subheader .wpcf7 {
   display: none;
 }
-/* line 150, style/section/_header.scss */
+/* line 153, style/section/_header.scss */
 .subheader .wpcf7 h3 {
   display: none;
 }
-/* line 151, style/section/_header.scss */
+/* line 154, style/section/_header.scss */
 .subheader .wpcf7 p {
   margin: 0;
 }
-/* line 152, style/section/_header.scss */
+/* line 155, style/section/_header.scss */
 .subheader .wpcf7 input {
   margin-right: 10px;
 }
 @media screen and (max-width: 720px) {
-  /* line 152, style/section/_header.scss */
+  /* line 155, style/section/_header.scss */
   .subheader .wpcf7 input {
     float: right;
     margin-top: 10px;

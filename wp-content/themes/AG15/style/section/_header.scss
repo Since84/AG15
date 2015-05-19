@@ -62,6 +62,9 @@ header {
 	.mobile-logo {
 		display: none;
 	}
+	.mobile-btn{
+		display: none;
+	}
 
 	@media screen and ( max-width: $mobile-width ){
 		.mobile-logo	{ display: block; }
