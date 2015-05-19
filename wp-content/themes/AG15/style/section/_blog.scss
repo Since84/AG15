@@ -114,7 +114,7 @@ li.go-back-button{
 						padding: 5px 0;
 					}
 				}
-				&:hover{
+				&.on{
 					max-height: 1000px;
 					ul {
 						opacity:1;

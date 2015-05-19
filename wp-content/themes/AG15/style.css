@@ -4442,11 +4442,11 @@ li.go-back-button a {
     padding: 5px 0;
   }
   /* line 117, style/section/_blog.scss */
-  .page-template-blogroll .one-sixth nav:hover, .category .one-sixth nav:hover, .author .one-sixth nav:hover, .single .one-sixth nav:hover {
+  .page-template-blogroll .one-sixth nav.on, .category .one-sixth nav.on, .author .one-sixth nav.on, .single .one-sixth nav.on {
     max-height: 1000px;
   }
   /* line 119, style/section/_blog.scss */
-  .page-template-blogroll .one-sixth nav:hover ul, .category .one-sixth nav:hover ul, .author .one-sixth nav:hover ul, .single .one-sixth nav:hover ul {
+  .page-template-blogroll .one-sixth nav.on ul, .category .one-sixth nav.on ul, .author .one-sixth nav.on ul, .single .one-sixth nav.on ul {
     opacity: 1;
     transition-delay: opacity .5s;
   }

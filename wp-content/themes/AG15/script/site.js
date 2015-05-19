@@ -46,6 +46,7 @@
         //Mobile Menu
           // "click .mobile-btn": "doSidr"
           $('.mobile-btn').click(this.doMenu);
+          $('.one-sixth h2').click(this.doCategoryList);
 
         //Project Grid
           $('.project.box:not(.open)').click(this.openProject);
@@ -77,6 +78,9 @@
   		}
       ,doMenu: function(){
         $('header nav').toggleClass('on');
+      }      
+      ,doCategoryList: function(){
+        $(this).parent().toggleClass('on');
       }
       ,doIsotope: function(){
           $('.flip-tile-wall').imagesLoaded(function(){
