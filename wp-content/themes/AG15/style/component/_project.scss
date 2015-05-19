@@ -168,7 +168,7 @@
 		}
 
 		.feature-wide{
-
+			height; 70vw;
 		}
 	}
 
@@ -183,7 +183,7 @@
 			width: 70%; 
 			overflow: hidden;
 			border-right: 5px solid #bbb; 
-			height: 70vw;
+			min-height: 5;
 		}
 		.feature-side{
 			width: 25%;
