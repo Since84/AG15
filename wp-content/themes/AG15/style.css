@@ -3973,7 +3973,7 @@ header .mobile-logo {
     width: 70%;
     overflow: hidden;
     border-right: 5px solid #bbb;
-    min-height: 5;
+    height: 70vw;
   }
   /* line 188, style/component/_project.scss */
   .project.detail .feature-side {
