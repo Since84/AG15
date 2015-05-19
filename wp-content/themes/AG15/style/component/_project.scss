@@ -6,6 +6,7 @@
 
 .detail-container {
   max-height: 536px;
+  height: 80vw;
 }
 
 .project{
@@ -90,10 +91,8 @@
 
 	.feature-side{
 		width: 100%;
-		padding: 20px 40px 0px;
-		height: auto;
-		overflow-y: scroll;
-		height: 500px;
+		padding: 0px 40px 0px;
+		overflow-y: hidden;
 
 		h2 { margin-bottom: 5px; }
 		h1 { margin-bottom: 5px; }
@@ -103,8 +102,10 @@
 
 
 		.feature-pager {
-			height: 10px;
+			height: 20px;
 			margin-bottom: 30px;
+			padding-top: 1vw;
+			text-align: center;
 			span {
 			    font-size: 40px;
 			    color: white;
@@ -131,7 +132,6 @@
 
 	.feature-wide{
 		.cycle-slideshow { 
-			min-height: 500px; 
 			overflow:hidden; 
 			&:empty{
 				min-height: 0px;
@@ -140,6 +140,30 @@
 			img {
 				width: 100%;
 				height: auto;
+			}
+		}
+	}
+
+	@media screen and ( max-width: 780px ){
+		.detail-container {
+		  height: 72vw;
+		}		
+		.feature-side{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background: rgba(0,0,0, .85);
+			z-index: 2000;
+			height: 35px;
+			.feature-pager{
+				margin-bottom: 15px;
+				padding-top: 2vw;
+				position: absolute;
+				right: 10px;
+			}
+			h1{
+				color: white;
+				margin-top: 7px;
 			}
 		}
 	}
@@ -153,6 +177,7 @@
 			width: 70%; 
 			overflow: hidden;
 			border-right: 5px solid #bbb; 
+			min-height: 5;
 		}
 		.feature-side{
 			width: 25%;
