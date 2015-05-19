@@ -3588,20 +3588,24 @@ header .mobile-logo {
   }
 }
 
-/* line 149, style/section/_header.scss */
-.subheader .wpcf7 h3 {
+/* line 148, style/section/_header.scss */
+.subheader .wpcf7 {
   display: none;
 }
 /* line 150, style/section/_header.scss */
+.subheader .wpcf7 h3 {
+  display: none;
+}
+/* line 151, style/section/_header.scss */
 .subheader .wpcf7 p {
   margin: 0;
 }
-/* line 151, style/section/_header.scss */
+/* line 152, style/section/_header.scss */
 .subheader .wpcf7 input {
   margin-right: 10px;
 }
 @media screen and (max-width: 720px) {
-  /* line 151, style/section/_header.scss */
+  /* line 152, style/section/_header.scss */
   .subheader .wpcf7 input {
     float: right;
     margin-top: 10px;
