@@ -3934,7 +3934,7 @@ header .mobile-logo {
 @media screen and (max-width: 780px) {
   /* line 148, style/component/_project.scss */
   .project.detail .detail-container {
-    height: 72vw;
+    height: 71.4vw;
   }
   /* line 151, style/component/_project.scss */
   .project.detail .feature-side {
