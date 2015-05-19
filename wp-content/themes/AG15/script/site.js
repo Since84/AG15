@@ -15,7 +15,8 @@
   		//Delegated Events for user actions
   		events: {
         //Mobile Menu
-      		"click .mobile-btn": "doSidr"
+          // "click .mobile-btn": "doSidr"
+      		"click .mobile-btn": "doMenu"
 
         //Project Grid
           ,"click .project.box:not(.open)": "openProject"
@@ -37,7 +38,7 @@
 
   		//Initialization function
   		initialize: function(){
-        this.doSidr();
+        // this.doSidr();
         this.doIsotope();
         this.smoothDivScroll();
         var browser = new TileBrowser();
@@ -51,6 +52,9 @@
           body: 'html'
         });
   		}
+      ,doMenu: function(){
+        $('header nav').toggleClass('on');
+      }
       ,doIsotope: function(){
           $('.flip-tile-wall').imagesLoaded(function(){
             // $('.flip-tile-wall').isotope({
