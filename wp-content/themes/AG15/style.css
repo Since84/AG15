@@ -3522,7 +3522,7 @@ header .mobile-logo {
     max-height: 0;
     overflow: hidden;
     width: 100%;
-    z-index: 9;
+    z-index: 9000;
     transition: all .5s ease-in-out;
   }
   /* line 83, style/section/_header.scss */
