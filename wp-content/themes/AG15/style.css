@@ -4013,10 +4013,6 @@ header .mobile-logo {
   }
 }
 @media screen and (min-width: 780px) {
-  /* line 67, style/component/_project.scss */
-  .project.detail {
-    height: 72vw;
-  }
   /* line 178, style/component/_project.scss */
   .project.detail .feature-wide, .project.detail .feature-side {
     display: inline-block;
