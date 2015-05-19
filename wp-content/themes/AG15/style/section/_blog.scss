@@ -3,15 +3,19 @@
 		width: 100%;
 		white-space: nowrap;
 
+
+
 		.news-post {
 			display: inline-block;
 			width: 220px;
 			position: relative;
-			margin: 0 35px 0 0;
+			margin: auto;
 			white-space: normal;
 			vertical-align: top;
 			@media screen and (max-width: 720px){
-				width: 40vw; 
+				width: 79vw; 
+				white-space: normal;
+				vertical-align: top;
 			}
 			a {
 				text-decoration: none;
@@ -55,6 +59,7 @@ ul.categories {
 		margin-bottom: 0px;
 		list-style: none;
 	}
+
 }
 
 //Back
@@ -69,5 +74,62 @@ li.go-back-button{
 	.post-thumbnail{
 		width: 100%;
 		height: auto;
+	}
+}
+
+@media screen and ( max-width: 720px ){
+	.page-template-blogroll, .category, .author{
+		.blog-feed{
+			margin-bottom: 2em;
+		}
+		.scrollingHotSpotLeft, .scrollingHotSpotRight{
+			display: none !important;
+		}
+		.scrollableArea{
+			width: 72vw !important;
+			white-space: normal;
+		}
+		.one-sixth{
+			margin-top: 0px;
+			border-bottom: 1px solid #eee;
+			nav{
+				max-height: 2.5em;
+				padding: 10px 0;
+				transition: .5s all linear;
+				text-align: center;
+				font-size: 16px;
+				h2{
+					font-size: 16px;
+				}
+				ul{
+					opacity: 0;
+					transition: .5s all linear;
+					li{
+						padding: 5px 0;
+					}
+				}
+				&:hover{
+					max-height: 1000px;
+					ul {
+						opacity:1;
+						transition-delay: opacity .5s;
+
+					}
+				}
+			}
+		}
+
+		.five-sixths{
+			margin-top: 1em;
+			.news-post{
+				margin-bottom: 2em;
+				border-bottom: 1px solid #bbb;
+				padding-bottom: 10px;				
+				.post-title{
+					height: auto;
+					font-size: 16px;
+				}
+			}
+		}
 	}
 }
